@@ -203,53 +203,110 @@ header{
     word-spacing: 0.3rem;
 }
 
+/* first top listings section starts here */
+
+/* Top Listings Message starts here */
+
+.listing-text{
+    width: 60%;
+    height: 30vh;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3.7rem;
+    text-align: center;
+}
+.listing-text h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem;
+    color: rgb(70, 24, 156);
+    /* color:rgb(12, 14, 26); */
+}
+hr {
+    color: grey;
+    width: 65px;
+    height: 3.8px;
+    background-color: #4611A7;
+    margin-top: 40px;
+   
+    border: 1px solid #4611A7;
+}
+.listing-text p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    color: rgb(96, 98, 105);
+    margin-top: 20px;
+}
+
+/* Listings/Cards start */
+
+.card-container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card { 
+    /* font-size: 7rem; */
+    color: rgb(96, 98, 105);
+    /* #D2D2D4 */
+    font-family: 'Rubik', sans-serif;
+    width: 30%;
+    /* border-radius: 10px; */
+    border: 1px solid rgb(223, 219, 231);
+    /* border: 1px solid rgb(224, 224, 224); */
+    
+    line-height: 3.2rem;
+}
+
 .card-text{
     font-size: 1.6rem;
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
-    line-height: 3.5rem;
-    font-weight: 400;
-    
-    
+    /* line-height: 3.5rem; */
+    font-weight: 500;     
 }
-.listing{ 
-    /* font-size: 7rem; */
-    color: #78787c;
-    font-family: 'Rubik', sans-serif;
-    width: 25%;
-    /* border: 1px solid rgb(209, 202, 228); */
-    border: 1px solid rgb(204, 203, 203);
-    border-radius: 5px;
-    
 
-}
 .card-text p:nth-child(1){
     color: rgb(102, 184, 102);
+    /* color: #4611A7; */
     font-weight: 400;
     /* color: rgb(129, 89, 202); */
 }
 .card-text p:nth-child(2){
     font-size: 1.7rem;
     font-weight: 400;
+    color: #79797a;
+    /* color: rgba(70, 17, 167, 0.849); */
+    /* color: rgba(115, 77, 185, 0.897); */
 }
 .rest-reviews{
+    font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     font-weight: 400;
+    color:#8b8c92;
+   
 }
 .address-cont{
     width: 100%;
 }
 .address{
     padding: 10px 20px;
-    font-size: 1.55rem;
+    font-size: 1.4rem;
     border-top: 1px solid rgb(228, 227, 230);
     display: flex;
     justify-content: space-between;
 }
  .address span{
     /* font-size: 1.4rem; */
-    color: #606269;
+    color: #8b8c92;
+    /* color: rgba(70, 17, 167, 0.849); */
+    /* color: rgba(141, 112, 196, 0.897); */
     font-weight: 400;   
 }
