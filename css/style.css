@@ -221,8 +221,8 @@ header{
 .listing-text h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 5rem;
-    color: rgb(70, 24, 156);
-    /* color:rgb(12, 14, 26); */
+    /* color: rgb(70, 24, 156); */
+    color:rgb(12, 14, 26);
 }
 hr {
     color: grey;
@@ -252,6 +252,7 @@ hr {
 
 .card { 
     /* font-size: 7rem; */
+    /* color: rgb(96, 98, 105); */
     color: rgb(96, 98, 105);
     /* #D2D2D4 */
     font-family: 'Rubik', sans-serif;
@@ -273,40 +274,50 @@ hr {
 }
 
 .card-text p:nth-child(1){
-    color: rgb(102, 184, 102);
+    color: rgb(79, 189, 79);
+    font-size: 1.8rem;
     /* color: #4611A7; */
     font-weight: 400;
     /* color: rgb(129, 89, 202); */
 }
 .card-text p:nth-child(2){
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    color: #79797a;
+    /* color: #79797a; */
+    color: rgb(96, 98, 105);
     /* color: rgba(70, 17, 167, 0.849); */
     /* color: rgba(115, 77, 185, 0.897); */
 }
 .rest-reviews{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     display: flex;
     justify-content: space-between;
     font-weight: 400;
-    color:#8b8c92;
-   
+    /* color:#8b8c92; */
+    color: rgb(96, 98, 105);
 }
 .address-cont{
     width: 100%;
 }
 .address{
     padding: 10px 20px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     border-top: 1px solid rgb(228, 227, 230);
     display: flex;
     justify-content: space-between;
 }
  .address span{
+    color: rgb(96, 98, 105);
     /* font-size: 1.4rem; */
-    color: #8b8c92;
+    /* color: #8b8c92; */
     /* color: rgba(70, 17, 167, 0.849); */
     /* color: rgba(141, 112, 196, 0.897); */
     font-weight: 400;   
 }
+
+
+
+
+
+
+/* footer starts here */
