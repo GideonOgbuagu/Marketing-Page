@@ -16,6 +16,7 @@ body{
     font-family: 'Raleway', sans-serif;
     color: black;
 }
+
 /* container starts here */
 .container{
     width: 100%;
@@ -102,7 +103,7 @@ nav{
 /* header starts here */
 header{
     width: 83%;
-    height: 100%;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -207,6 +208,10 @@ header{
 
 /* Top Listings Message starts here */
 
+.first-section{
+    margin-bottom: 120px;
+}
+
 .listing-text{
     width: 60%;
     height: 30vh;
@@ -257,11 +262,16 @@ hr {
     /* #D2D2D4 */
     font-family: 'Rubik', sans-serif;
     width: 30%;
-    /* border-radius: 10px; */
-    border: 1px solid rgb(223, 219, 231);
+    border-radius: 7px;
+    /* border: 1px solid rgb(223, 219, 231); */
     /* border: 1px solid rgb(224, 224, 224); */
-    
     line-height: 3.2rem;
+    box-shadow: 0 4px 25px 10px rgba(156, 134, 197, 0.103), 0 6px 40px 10px rgba(156, 134, 197, 0.103);
+}
+
+.card-img{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 .card-text{
@@ -269,6 +279,7 @@ hr {
     padding-top: 10px;
     padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 10px;
     /* line-height: 3.5rem; */
     font-weight: 500;     
 }
@@ -300,8 +311,8 @@ hr {
     width: 100%;
 }
 .address{
-    padding: 10px 20px;
-    font-size: 1.5rem;
+    padding: 7px 20px;
+    font-size: 1.4rem;
     border-top: 1px solid rgb(228, 227, 230);
     display: flex;
     justify-content: space-between;
@@ -321,3 +332,84 @@ hr {
 
 
 /* footer starts here */
+
+footer {
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 70vh;
+    background-color: #262424;
+    color: rgba(223, 217, 248, 0.932);
+    padding-top: 160px;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+    
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.8rem;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer p{
+    font-family: 'Rubik', sans-serif;
+}
+footer a {
+    
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgba(223, 217, 248, 0.932);
+
+}
+.footer-container{
+    width: 90%;
+    height: 40vh;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.footer{
+    width: 35%;
+    height: 20vh;
+    line-height: 5rem;
+    /* margin-top: 120px; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.category {
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1, 
+.footer2{
+    width: 40%;
+    height: 50vh;
+}
+.footer p {
+    font-size: 2rem;
+}
+.footer-logo p{
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.contact h4,
+.contact h5{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    
+}
