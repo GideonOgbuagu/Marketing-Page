@@ -126,13 +126,12 @@ header{
     justify-content: center;
     align-items: center;
     width: 100%;
+    
 }
 .header-text{
     font-family: 'Raleway', sans-serif;
     width: 100%;
     text-align: center;
-    position: relative;
-    top: -50px;
 }
 
 .header-text h1{
@@ -145,62 +144,41 @@ header{
     font-weight: 100;
 }
 
-.first-section{
-    margin-bottom: 120px;
-}
+/* HERO ENDS HERE */
 
-.listing-text{
-    width: 60%;
-    height: 30vh;
-    margin: 0 auto; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 3.7rem;
-    text-align: center;
-}
-.listing-text h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 5rem;
-    color:rgb(12, 14, 26);
-}
-hr {
-    color: grey;
-    width: 65px;
-    height: 3.8px;
-    background-color: #4611A7;
-    margin-top: 40px;
-   
-    border: 1px solid #4611A7;
-}
-.listing-text p {
-    font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
-    color: rgb(96, 98, 105);
-    margin-top: 20px;
-}
+
+
 
 /* LISTING CARDS START HERE */
 
+.first-section{
+    margin-bottom: 300px;
+    margin-top: 130px;
+    height: 700px;
+}
+
 .card-container{
-    width: 90%;
+    width: 80%;
+    height: 50vh;
     margin: 0 auto;
     margin-top: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card { 
     color: rgb(96, 98, 105);
     font-family: 'Rubik', sans-serif;
-    width: 30%;
+    width: 24%;
+    height: 50vh;
     border-radius: 7px;
     line-height: 3.2rem;
     box-shadow: 0 4px 25px 10px rgba(156, 134, 197, 0.103), 0 6px 40px 10px rgba(156, 134, 197, 0.103);
 }
 
 .card-img{
+    /* height: 40vh; */
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
@@ -225,16 +203,23 @@ hr {
     color: rgb(96, 98, 105);
 }
 .rest-reviews{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     display: flex;
     justify-content: space-between;
     font-weight: 400;
     color: rgb(96, 98, 105);
 }
-.address-cont{
-    width: 100%;
+
+.rest-reviews i {
+    font-size: 4rem;
 }
-.address{
+.rest-reviews a{
+    color: rgb(96, 98, 105);
+}
+/* .address-cont{
+    width: 100%;
+} */
+/* .address{
     padding: 7px 20px;
     font-size: 1.4rem;
     border-top: 1px solid rgb(228, 227, 230);
@@ -244,4 +229,117 @@ hr {
  .address span{
     color: rgb(96, 98, 105);
     font-weight: 400;   
+} */
+
+
+/* FOOTER SECTION STARTS HERE */
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 70vh;
+    background-color: #11031b;
+    color: rgba(169, 166, 180, 0.932);
+    padding-top: 140px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(210, 204, 221);
+}
+.social {
+    width: 40%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: baseline;
+}
+.social a{
+    font-size: 3rem;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer p{
+    font-family: 'Rubik', sans-serif;
+}
+footer a {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.9rem;
+    /* color: rgb(204, 201, 218); */
+    color: rgba(169, 166, 180, 0.932);
+
+}
+.footer-container{
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer{
+    width: 35%;
+    height: 20vh;
+    line-height: 4.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer h3,
+.footer1 h4,
+.footer2 h4,
+.footer h4{
+    margin-bottom: 20px;
+}
+
+.category {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1, 
+.footer2{
+    width: 40%;
+    height: 50vh;
+}
+.footer p {
+    font-size: 1.8rem;
+}
+.footer-logo{
+    line-height: 4.3rem;
+}
+
+.footer-logo h3{
+    font-size: 4.3rem;
+}
+
+.contact h4,
+.contact h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;  
+}
+.contact h5{
+    font-weight: 600;
+}
+
+
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 4rem;
 }
