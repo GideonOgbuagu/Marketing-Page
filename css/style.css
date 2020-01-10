@@ -33,7 +33,7 @@ nav{
     opacity: 1;
     position: fixed;
     background-color: #11031b;
-    z-index: 4;
+    z-index: 7;
 }
 
 .nav-wrapper{
@@ -101,7 +101,7 @@ nav{
     background-color: rgb(103, 44, 212);
 }
 
-/* HAAMBURGER STARTS */
+/* HAMBURGER STARTS */
 
 .hamburger-wrapper {
     display: flex;
@@ -158,9 +158,7 @@ header{
     font-size: 5rem;
     font-weight: 100;
 }
-/* .form-content div {
-    width: 100%;
-} */
+
 .form-content{
    width: 97%;
    margin: 0 auto;
@@ -225,15 +223,13 @@ header{
 .header-textTwo{
     font-family: 'Rubik', sans-serif;
     font-size: 1.7rem;
-    /* position: relative;
-    top: 5%; */
     letter-spacing: 0.1rem;
-    /* color: black; */
     z-index: 1;
     color: rgb(180, 161, 194);
     position: relative;
     top: 100px;
     word-spacing: 0.3rem;
+    display: none;
 } 
 
 /* NAV AND HEADER SECTION END HERE */
@@ -242,14 +238,14 @@ header{
 
 .mobile-nav{
     position: fixed;
-    left: 0;
+    left: -40%;
     top: 0;
-    width: 35%;
+    width: 40%;
     height: 100vh;
-    background-color: white;
+    background-color: rgb(5, 3, 10);
     z-index: 10;
-    border-right: 1px solid rgb(236, 234, 234);
     display: none;
+    transition: left .8s cubic-bezier(1, 0, 0, 1);
 }
 
 .side-logo {
@@ -259,12 +255,11 @@ header{
 }
 .side-logo h4 {
     font-size: 4rem;
-    color: rgb(87, 35, 131);
+    color: rgb(118, 67, 212);
 }
 .sidelinks-container {
     width: 100%;
-    height: 27vh;
-    padding: 10px 0px;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -274,23 +269,36 @@ header{
 }
 .sidelinks-container li {
     list-style-type: none;
-    border-top: 1px solid lightgray;
-    padding: 15px 0;
+    border-top: 1px solid rgb(23, 22, 24);
+    padding: 12px 0;
     padding-left: 20px;
 }
 
 .sidelinks-container a:nth-child(4) {
-   border-bottom: 1px solid lightgray;
+   border-bottom: 1px solid rgb(23, 22, 24);
 }
 .sidelinks-container a {
-    color: rgb(49, 45, 53);
-    font-size: 1.7rem;
+    color: rgb(230, 224, 235);
+    font-size: 1.5rem;
     text-decoration: none;
-    font-weight: 800;
-    /* padding: 10px 0; */   
+    font-weight: 700;
+    transition: all 500ms;  
 }
 .sidelinks-container a:hover {
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(230, 224, 235);
+    color: rgb(5, 3, 10);
+}
+
+
+/* INPUT CHECKBOX */
+.checkbox {
+    position: absolute;
+    top: -20px;
+    visibility: hidden;
+}
+
+.checkbox:checked ~ .mobile-nav {
+    left: 0;
 }
 
 /* TOP LISTING TEXT STARTS HERE */
@@ -596,14 +604,18 @@ footer a:hover {
 @media (max-width: 988px){
     .nav-container a:nth-child(4){
         display: none;
-        /* display: flex;
-        justify-content: space-around; */
     }
     .card{
         width: 40%;
     }
     .nav-container a{
         font-size: 1.5rem;
+    }
+    .header-text h1{
+        font-size: 6rem;
+    }
+    .header-text p{
+        font-size: 5rem;
     }
 }
 
@@ -612,10 +624,23 @@ footer a:hover {
         display: none;
         
     }
+    .hamburger-wrapper {
+        display: block;
+    }
 
+    .header-text {
+        line-height: 6rem;
+    }
+
+    .header-text h1{
+        font-size: 5rem;
+        font-weight: 600;
+    }
+    .header-text p{
+        font-size: 4rem;
+    }
     .text-input{
-        padding-left: 15px;
-        
+        padding-left: 15px;  
     }
     
     .form-content{
@@ -653,17 +678,30 @@ footer a:hover {
     .nav-container {
         width: 70%;
     }
-    .mobile-nav {
-        display: none;
-    }
     .nav-container a:nth-child(7){
         padding-right: 15px;
         padding-left: 15px;
     }
+    .mobile-nav {
+        display: block;
+    }
+    
+
 }
 
 
 @media (max-width: 560px){
+    .header-text {
+        line-height: 4rem;
+    }
+
+    .header-text h1{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    .header-text p{
+        font-size: 3rem;
+    }
     .form-content{
         height: 39vh;
         display: flex;
@@ -694,9 +732,12 @@ footer a:hover {
             background-color: #4611A7;
             border-radius: 30px;
             color: white;
-            padding-right: 15px;
-            padding-left: 15px;
-        
+            color: #e3dcf1;
+            padding: 11px 20px;
+    }
+
+    .nav-container .register:hover{
+        background-color: rgb(103, 44, 212);
     }
 
     
