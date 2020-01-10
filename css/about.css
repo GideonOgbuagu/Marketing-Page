@@ -1,0 +1,345 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    /* border: 1px solid white; */
+}
+
+html, 
+body{
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+/* CONTAINER STARTS HERE */
+.container{
+    width: 100%;
+    height: 60vh;
+    max-width: 100%;
+    background-image: radial-gradient(rgba(17, 1, 48, 0.774) 15%, rgba(6, 0, 31, 0.945) 70%), url(/img/team2.jpg);
+    background-size: 100%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+}
+
+/* NAV STARTS HERE */
+
+nav{
+    width: 100%;
+    height: 11vh;
+    color: white;
+    border-bottom: 0.5px solid rgb(119, 113, 126);
+}
+
+.nav-wrapper{
+    width: 83%;
+    height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-container{
+    width: 10%;
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo-container p{
+    font-size: 3.8rem;
+    font-weight: 600;
+    
+}
+.colored {
+    color:rgb(166, 120, 252);
+} 
+/* LOGO CONTAINER ENDS HERE */
+
+/* NAV LINKS START HERE*/
+.nav-container{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 11vh;
+
+}
+.nav-container a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.7rem;
+    color: rgb(223, 217, 248);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.1;
+}
+
+.nav-container a:hover{
+    color: white;
+}
+.nav-container a:first-child{
+    color: white;
+    padding-bottom: 9px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.nav-container a:nth-child(5),
+.nav-container a:nth-child(6),
+.nav-container a:nth-child(7){
+    font-weight: 400;
+}
+.nav-container a:nth-child(7){
+    padding: 14px 30px;
+    background-color: #4611A7;
+    border-radius: 30px;
+    color: white;
+}
+.nav-container a:nth-child(7):hover{
+    background-color: rgb(103, 44, 212);
+}
+
+/* HERO OR HEADER SECTION STARTS HERE*/
+
+header{
+    width: 83%;
+    height: 60vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 8rem;
+    color: white;
+
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.header-text{
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+.header-text h1{
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.header-text p{
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+/* HERO ENDS HERE */
+
+
+
+
+/* LISTING CARDS START HERE */
+
+.first-section{
+    margin-bottom: 300px;
+    margin-top: 130px;
+    height: 700px;
+}
+
+.card-container{
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card { 
+    color: rgb(96, 98, 105);
+    font-family: 'Rubik', sans-serif;
+    width: 24%;
+    height: 50vh;
+    border-radius: 7px;
+    line-height: 3.2rem;
+    box-shadow: 0 4px 25px 10px rgba(156, 134, 197, 0.103), 0 6px 40px 10px rgba(156, 134, 197, 0.103);
+}
+
+.card-img{
+    /* height: 40vh; */
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.card-text{
+    font-size: 1.6rem;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-weight: 500;     
+}
+
+.card-text p:nth-child(1){
+    color: rgb(79, 189, 79);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.card-text p:nth-child(2){
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(96, 98, 105);
+}
+.rest-reviews{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    color: rgb(96, 98, 105);
+}
+
+.rest-reviews i {
+    font-size: 4rem;
+}
+.rest-reviews a{
+    color: rgb(96, 98, 105);
+}
+/* .address-cont{
+    width: 100%;
+} */
+/* .address{
+    padding: 7px 20px;
+    font-size: 1.4rem;
+    border-top: 1px solid rgb(228, 227, 230);
+    display: flex;
+    justify-content: space-between;
+}
+ .address span{
+    color: rgb(96, 98, 105);
+    font-weight: 400;   
+} */
+
+
+/* FOOTER SECTION STARTS HERE */
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 70vh;
+    background-color: #11031b;
+    color: rgba(169, 166, 180, 0.932);
+    padding-top: 140px;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(210, 204, 221);
+}
+.social {
+    width: 40%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: baseline;
+}
+.social a{
+    font-size: 3rem;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+footer p{
+    font-family: 'Rubik', sans-serif;
+}
+footer a {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.9rem;
+    /* color: rgb(204, 201, 218); */
+    color: rgba(169, 166, 180, 0.932);
+
+}
+.footer-container{
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer{
+    width: 35%;
+    height: 20vh;
+    line-height: 4.3rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer h3,
+.footer1 h4,
+.footer2 h4,
+.footer h4{
+    margin-bottom: 20px;
+}
+
+.category {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer1, 
+.footer2{
+    width: 40%;
+    height: 50vh;
+}
+.footer p {
+    font-size: 1.8rem;
+}
+.footer-logo{
+    line-height: 4.3rem;
+}
+
+.footer-logo h3{
+    font-size: 4.3rem;
+}
+
+.contact h4,
+.contact h5{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;  
+}
+.contact h5{
+    font-weight: 600;
+}
+
+
+.contact {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 4rem;
+}
