@@ -54,10 +54,11 @@ nav{
 .logo-container p{
     font-size: 3.8rem;
     font-weight: 600;
+    color: rgb(118, 67, 212);
     
 }
 .colored {
-    color:rgb(166, 120, 252);
+    color: rgb(209, 199, 218);
 } 
 
 /*LOGO CONTAINER STARTS HERE */
@@ -259,7 +260,7 @@ header{
 }
 .dotted {
     color: rgb(209, 199, 218);
-    font-size: 
+    /* font-size:  */
 }
 .sidelinks-container {
     width: 100%;
@@ -357,7 +358,7 @@ hr {
 }
 
 .card { 
-    color: rgb(96, 98, 105);
+    color: rgb(119, 121, 128);
     font-family: 'Rubik', sans-serif;
     width: 30%;
     border-radius: 7px;
@@ -382,7 +383,7 @@ hr {
 
 .card-text p:nth-child(1){
     color: rgb(79, 189, 79);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 .card-text p:nth-child(2){
@@ -390,12 +391,34 @@ hr {
     font-weight: 400;
     color: rgb(96, 98, 105);
 }
+
+.card i,
+.card i , 
+.card i {
+    position: relative;
+    left: -3.4%;
+}
+
+.card .fa-address-card {
+    position: relative;
+    left: -1%;
+}
+
+.card .fa-clock {
+    color: rgb(119, 121, 128);
+    position: relative;
+    left: -1.2%;
+}
 .rest-reviews{
     font-size: 1.6rem;
     display: flex;
     justify-content: space-between;
     font-weight: 400;
     color: rgb(96, 98, 105);
+}
+.rest-reviews span:first-child {
+    position: relative;
+    left: -0.9%;
 }
 .address-cont{
     width: 100%;
@@ -658,7 +681,7 @@ footer a:hover {
     .input-container {
         width: 100%;
         display: flex;
-        justify-content: ;
+        /* justify-content: ; */
     }
     .text-input {
         display: flex;
