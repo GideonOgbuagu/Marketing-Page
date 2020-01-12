@@ -359,7 +359,6 @@ hr {
     margin-top: 60px;
     display: flex;
     justify-content: space-around;
-    /* align-items: space-around; */
     flex-wrap: wrap;
 }
 
@@ -834,8 +833,38 @@ footer a{
     }
     .contact h5, .contact a {
         line-height: 2rem;
-    }
-    
-    
+    }   
 }
 
+@media (max-width: 380px) {
+    .nav-container .register {
+        padding: 10px 12px;
+    }
+    .nav-container label {
+        margin-left: 3%;
+    }
+
+    .first-section {
+        margin-top: 60%;
+    }
+    .listing-text {
+        line-height: 3.5rem;
+        margin-bottom: 50%;
+    }
+    .listing-text h1 {
+        line-height: 4rem;
+        font-size: 4rem;
+        
+    }
+    .listing-text p {
+        font-size: 1.8rem;
+    }
+    .card-text p:nth-child(1),
+    .card-text p:nth-child(2),
+    .card-text i,
+    .rest-reviews,
+    .address {
+        font-size: 1.28rem;
+    }
+
+}
