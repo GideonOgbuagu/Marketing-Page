@@ -243,6 +243,11 @@ header{
     top: 0;
     width: 40%;
     height: 100vh;
+    /* background-color: rgb(219, 199, 255); */
+    /* #3B3246 */
+    /* #4B4453 */
+    /* #7B7484 */
+    /* #B0A8B9 */
     background-color: rgb(5, 3, 10);
     z-index: 10;
     display: none;
@@ -256,11 +261,10 @@ header{
 }
 .side-logo h4 {
     font-size: 4rem;
-    color: rgb(118, 67, 212);
+    color: #4611A7;
 }
 .dotted {
-    color: rgb(209, 199, 218);
-    /* font-size:  */
+    color: black;
 }
 .sidelinks-container {
     width: 100%;
@@ -274,24 +278,26 @@ header{
 }
 .sidelinks-container li {
     list-style-type: none;
-    border-top: 1px solid rgb(23, 22, 24);
+    border-top: 1px solid rgb(68, 67, 70);
     padding: 12px 0;
     padding-left: 20px;
 }
 
 .sidelinks-container a:nth-child(4) {
-   border-bottom: 1px solid rgb(23, 22, 24);
+   border-bottom: 1px solid rgb(68, 67, 70);
 }
 .sidelinks-container a {
-    color: rgb(230, 224, 235);
+    color: rgb(182, 182, 182);
     font-size: 1.5rem;
     text-decoration: none;
-    font-weight: 700;
-    transition: all 500ms;  
+    font-weight: 500;
+    transition: all 700ms;  
 }
 .sidelinks-container a:hover {
-    background-color: rgb(230, 224, 235);
-    color: rgb(5, 3, 10);
+    background-color: rgb(219, 219, 219);
+    color: rgb(20, 20, 20);
+    font-weight: 700;
+    
 }
 
 
@@ -365,6 +371,7 @@ hr {
     line-height: 3.2rem;
     box-shadow: 0 4px 25px 10px rgba(156, 134, 197, 0.103), 0 6px 40px 10px rgba(156, 134, 197, 0.103);
     margin-bottom: 90px;
+    
 }
 
 .card-img{
@@ -378,16 +385,16 @@ hr {
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 10px;
-    font-weight: 500;     
+    font-weight: 500;  
+       
 }
 
 .card-text p:nth-child(1){
-    color: rgb(79, 189, 79);
     font-size: 1.6rem;
     font-weight: 400;
 }
 .card-text p:nth-child(2){
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: rgb(96, 98, 105);
 }
@@ -397,6 +404,8 @@ hr {
 .card i {
     position: relative;
     left: -3.4%;
+    color: rgb(146, 137, 160);
+    color: rgb(189, 99, 141);
 }
 
 .card .fa-address-card {
@@ -408,9 +417,12 @@ hr {
     color: rgb(119, 121, 128);
     position: relative;
     left: -1.2%;
+    /* color: #4611A7; */
+    color: rgb(149, 118, 207);
+    color: rgb(189, 99, 141);
 }
 .rest-reviews{
-    font-size: 1.6rem;
+    font-size: 1.56rem;
     display: flex;
     justify-content: space-between;
     font-weight: 400;
@@ -440,12 +452,12 @@ hr {
 
 
 
+
 /* FOOTER SECTION STARTS HERE */
 
 footer {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    height: 90vh;
     background-color: #11031b;
     color: rgba(169, 166, 180, 0.932);
     padding-top: 140px;
@@ -466,7 +478,7 @@ footer h6{
     color: rgb(210, 204, 221);
 }
 .social {
-    width: 40%;
+    width: 50%;
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
@@ -487,7 +499,6 @@ footer a {
     font-weight: 500;
     text-decoration: none;
     font-size: 1.9rem;
-    /* color: rgb(204, 201, 218); */
     color: rgba(169, 166, 180, 0.932);
 
 }
@@ -496,63 +507,64 @@ footer a:hover {
 }
 .footer-container{
     width: 90%;
-    height: 50vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: flex-start;
     
 }
 .footer{
-    width: 35%;
-    height: 20vh;
-    line-height: 4.3rem;
     display: flex;
     flex-direction: column;
 }
-.footer h3,
-.footer1 h4,
-.footer2 h4,
-.footer h4{
-    margin-bottom: 20px;
-}
+
 
 .category {
-    width: 50%;
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
+    width:18%;
 }
 
-.footer1, 
-.footer2{
-    width: 40%;
-    height: 50vh;
-}
+
+/* .footer2{
+   margin-left: -7%;
+} */
+
 .footer p {
     font-size: 1.8rem;
 }
 .footer-logo{
-    line-height: 4.3rem;
+    width: 28%;
 }
 
 .footer-logo h3{
     font-size: 4.3rem;
 }
 
-.contact h4,
-.contact h5{
+.contact h4
+{
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;  
+    font-size: 2.5rem;  
 }
 .contact h5{
     font-weight: 600;
+    font-size: 2rem;
 }
 
 
 .contact {
     font-family: 'Montserrat', sans-serif;
-    line-height: 4rem;
+    width: 20%;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* MEDIA QUERY STARTS */
@@ -597,22 +609,25 @@ footer a:hover {
     .logo-container p{
         font-size: 3rem;
     }
+    .nav-container a {
+        font-size: 1.5rem;
+    }
 
     .card{
         width: 40%;
     }
-    .footer-container {
+    /* .footer-container {
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: column;
         flex-wrap: wrap;
-    }
-    .footer {
+    } */
+    /* .footer {
         width: 45%;
         height: 30vh;
         line-height: 2.5rem;
-        /* width: 100%; */
-    }
-    .contact{
+        width: 100%;
+    } */
+    /* .contact{
         line-height: 2.5rem;
         
     }
@@ -621,10 +636,8 @@ footer a:hover {
     }
     footer {
         height: 100vh;
-    }
-    .nav-container a {
-        font-size: 1.5rem;
-    }
+    } */
+    
    
 }
 
@@ -689,9 +702,12 @@ footer a:hover {
         font-size: 1.5rem;
     }
      
-
      .submit-container{
          width: 100%;
+     }
+     .listing-text {
+         margin-top: 25%;
+         margin-bottom: 20%;
      }
      .card{
         width: 80%;
@@ -712,6 +728,37 @@ footer a:hover {
     .mobile-nav {
         display: block;
     }
+
+  
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6{
+    font-size: 2.0rem;
+   
+}
+.contact h4{
+    font-size:2rem;
+}
+
+.footer-logo h3{
+    font-size: 3rem;
+}
+
+.footer p{
+    font-size: 1.3rem;
+}
+
+footer a{
+    font-size:1.3rem;
+}
+.contact h5{
+    font-size: 1.6rem;
+}
+
     
 
 }
@@ -766,9 +813,29 @@ footer a:hover {
     .nav-container .register:hover{
         background-color: rgb(103, 44, 212);
     }
-
+    .footer-container{
+        flex-direction: row ;
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .footer{
+        width: 40%;
+    }
+    .social a {
+        font-size: 2rem;
+    }
+    .footer2,
+    .contact {
+        margin-top: 3%;
+    }
+    .contact h5 {
+        font-size: 1.4rem;
+    }
+    .contact h5, .contact a {
+        line-height: 2rem;
+    }
     
-
-   
+    
 }
 
