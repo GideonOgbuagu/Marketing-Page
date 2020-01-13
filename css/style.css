@@ -217,6 +217,7 @@ header{
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    outline: none;
 }
 .submit-input:hover{
     background-color: rgb(103, 44, 212);
@@ -403,7 +404,6 @@ hr {
 .card i {
     position: relative;
     left: -3.4%;
-    color: rgb(146, 137, 160);
     color: rgb(189, 99, 141);
 }
 
@@ -417,7 +417,6 @@ hr {
     position: relative;
     left: -1.2%;
     /* color: #4611A7; */
-    color: rgb(149, 118, 207);
     color: rgb(189, 99, 141);
 }
 .rest-reviews{
@@ -615,27 +614,7 @@ footer a:hover {
     .card{
         width: 40%;
     }
-    /* .footer-container {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    } */
-    /* .footer {
-        width: 45%;
-        height: 30vh;
-        line-height: 2.5rem;
-        width: 100%;
-    } */
-    /* .contact{
-        line-height: 2.5rem;
-        
-    }
-    .footer:nth-child(3){
-        padding-top: 60px;
-    }
-    footer {
-        height: 100vh;
-    } */
+
     
    
 }
